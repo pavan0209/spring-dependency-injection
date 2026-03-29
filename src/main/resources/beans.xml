@@ -29,4 +29,16 @@
         <constructor-arg name="name" value="Rushi Birari"/>
     </bean>
 
+    <!-- injecting objects using setter injection -->
+    <bean id="notify" class="org.pavan.di.NotificationService"/>
+
+    <bean id="order" class="org.pavan.di.OrderService">
+        <property name="orderId" value="1"/>
+        <property name="notificationService" ref="notify"/>
+    </bean>
+
+    <bean id="payment" class="org.pavan.di.PaymentService">
+        <property name="notificationService" ref="notify"/>
+    </bean>
+
 </beans>

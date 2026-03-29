@@ -21,5 +21,12 @@ public class Main {
 
         Employee rushi = context.getBean("rushi", Employee.class);
         rushi.showInfo();
+
+        // injecting objects using setter injection
+        OrderService order = context.getBean("order", OrderService.class);
+        order.sendNotification();
+
+        PaymentService payment = context.getBean("payment", PaymentService.class);
+        payment.sendNotification();
     }
 }
