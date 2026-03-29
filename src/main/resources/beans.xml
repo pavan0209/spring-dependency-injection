@@ -4,6 +4,7 @@
        http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!-- Setter Injection -->
     <bean id="pavan" class="org.pavan.di.UserProfile">
         <property name="id" value="101"/>
         <property name="name" value="Pavan Sonawane"/>
@@ -14,6 +15,18 @@
         <property name="id" value="103"/>
         <property name="name" value="Dipak Kalaskar"/>
         <property name="email" value="dipak@gmail.com"/>
+    </bean>
+
+    <!-- Constructor Injection -->
+    <bean id="ganesh" class="org.pavan.di.Employee">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="name" value="Ganesh Shinde"/>
+        <constructor-arg name="salary" value="45006.58"/>
+    </bean>
+
+    <bean id="rushi" class="org.pavan.di.Employee">
+        <constructor-arg name="id" value="1" type="int"/>
+        <constructor-arg name="name" value="Rushi Birari"/>
     </bean>
 
 </beans>
