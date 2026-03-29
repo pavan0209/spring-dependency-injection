@@ -1,13 +1,9 @@
 package org.pavan.di;
 
-public class PaymentService {
-    NotificationService notificationService;
+public class PaymentService implements NotificationService {
 
-    public void setNotificationService(NotificationService notificationService) {
-        this.notificationService = notificationService;
-    }
-
+    @Override
     public void sendNotification() {
-        notificationService.sendNotification();
+        System.out.println("Sent Payment Notification");
     }
 }

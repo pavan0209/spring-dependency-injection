@@ -28,5 +28,9 @@ public class Main {
 
         PaymentService payment = context.getBean("payment", PaymentService.class);
         payment.sendNotification();
+
+        // loose coupling
+        Customer customer = context.getBean("customer", Customer.class);
+        customer.sendNotification();
     }
 }

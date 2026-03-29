@@ -30,15 +30,19 @@
     </bean>
 
     <!-- injecting objects using setter injection -->
-    <bean id="notify" class="org.pavan.di.NotificationService"/>
-
     <bean id="order" class="org.pavan.di.OrderService">
         <property name="orderId" value="1"/>
-        <property name="notificationService" ref="notify"/>
     </bean>
 
     <bean id="payment" class="org.pavan.di.PaymentService">
-        <property name="notificationService" ref="notify"/>
+    </bean>
+
+    <!-- Loose Coupling -->
+    <bean id="customer" class="org.pavan.di.Customer">
+        <property name="id" value="11"/>
+        <property name="name" value="Piyush Gaud"/>
+        <property name="email" value="piyush@gmail.com"/>
+        <property name="service" ref="payment"/>
     </bean>
 
 </beans>

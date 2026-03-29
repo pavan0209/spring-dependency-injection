@@ -1,8 +1,6 @@
 package org.pavan.di;
 
-public class NotificationService {
+interface NotificationService {
 
-    public void sendNotification() {
-        System.out.println("Notification sent");
-    }
+    public void sendNotification();
 }
