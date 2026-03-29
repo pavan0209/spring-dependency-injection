@@ -10,4 +10,10 @@
         <property name="email" value="pavan@gmail.com"/>
     </bean>
 
+    <bean id="dipak" class="org.pavan.di.UserProfile">
+        <property name="id" value="103"/>
+        <property name="name" value="Dipak Kalaskar"/>
+        <property name="email" value="dipak@gmail.com"/>
+    </bean>
+
 </beans>

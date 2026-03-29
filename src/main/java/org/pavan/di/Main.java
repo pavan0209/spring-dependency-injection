@@ -10,5 +10,8 @@ public class Main {
 
         UserProfile pavan = context.getBean("pavan", UserProfile.class);
         pavan.displayUserProfile();
+
+        UserProfile dipak = context.getBean("dipak", UserProfile.class);
+        dipak.displayUserProfile();
     }
 }
