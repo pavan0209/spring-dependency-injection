@@ -25,4 +25,4 @@ This code demonstrates:
 
 👉 *Spring Dependency Injection allows us to define and manage objects through configuration instead of creating them
 manually in code. This makes the application easier to modify, as we can change values or switch objects without
-updating the Java code. It helps keep the code clean, flexible, and easier to maintain.*
+updating the Java code. It helps keep the code clean, flexible, and easier to maintain*
